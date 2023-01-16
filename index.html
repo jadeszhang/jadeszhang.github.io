@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jade Zhang - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			/* The actual timeline (the vertical ruler) */
+			.timeline {
+			  position: relative;
+			  max-width: 1200px;
+			  margin: 0 auto;
+			}
+			
+			/* The actual timeline (the vertical ruler) */
+			.timeline::after {
+			  content: '';
+			  position: absolute;
+			  width: 6px;
+			  background-color: white;
+			  top: 0;
+			  bottom: 0;
+			  left: 50%;
+			  margin-left: -3px;
+			}
+			
+			/* Container around content */
+			.container {
+			  padding: 10px 40px;
+			  position: relative;
+			  background-color: inherit;
+			  width: 50%;
+			}
+			/* The circles on the timeline */
+			.container::after {
+			  content: '';
+			  position: absolute;
+			  width: 25px;
+			  height: 25px;
+			  right: -10px;
+			  background-color: rgb(62, 114, 255);
+			  border: 4px solid #f9f8fa;
+			  top: 15px;
+			  border-radius: 50%;
+			  z-index: 1;
+			}
+			
+			/* Place the container to the left */
+			.left {
+			  left: 0;
+			}
+			
+			/* Place the container to the right */
+			.right {
+			  left: 50%;
+			}
+			
+			/* Add arrows to the left container (pointing right) */
+			.left::before {
+			  content: " ";
+			  height: 0;
+			  position: absolute;
+			  top: 22px;
+			  width: 0;
+			  z-index: 1;
+			  right: 30px;
+			  border: medium solid white;
+			  border-width: 10px 0 10px 10px;
+			  border-color: transparent transparent transparent white;
+			}
+			
+			/* Add arrows to the right container (pointing left) */
+			/*.right::before {
+			  content: " ";
+			  height: 0;
+			  position: absolute;
+			  top: 22px;
+			  width: 0;
+			  z-index: 1;
+			  left: 30px;
+			  border: medium solid white;
+			  border-width: 10px 10px 10px 0;
+			  border-color: transparent white transparent transparent;
+			} 
+			*/
+			
+			/* Fix the circle for containers on the right side */
+			.right::after {
+			  left: -16px;
+			}
+			
+			/* The actual content */
+			.content {
+			  padding: 20px 30px;
+			  position: relative;
+			  border-radius: 6px;
+			}
+			
+			/* Media queries - Responsive timeline on screens less than 600px wide */
+			@media screen and (max-width: 600px) {
+			  /* Place the timelime to the left */
+			  .timeline::after {
+			  left: 31px;
+			  }
+			  
+			  /* Full-width containers */
+			  .container {
+			  width: 100%;
+			  padding-left: 70px;
+			  padding-right: 25px;
+			  }
+			  
+			  /* Make sure that all arrows are pointing leftwards */
+			  .container::before {
+			  left: 60px;
+			  border: medium solid white;
+			  border-width: 10px 10px 10px 0;
+			  border-color: transparent white transparent transparent;
+			  }
+			
+			  /* Make sure all circles are at the same spot */
+			  .left::after, .right::after {
+			  left: 15px;
+			  }
+			  
+			  /* Make all right containers behave like the left ones */
+			  .right {
+			  left: 0%;
+			  }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Education & Experience</a></li>
+							<li><a href="#two">Academic Projects & Conference Presentation</a></li>
+							<li><a href="#three">Personal Projects</a></li>
+							<li><a href="#four">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1 style="display: inline">Jade Zhang | </h1> <p style="display: inline">Data Science Enthusiast</p> 
+							<hr>
+							<h2> Hello! I'm Jade </h2>
+							<h4> Highly accomplished research and data analyst with a substantive academic background interpreting data across varied research topics. Possesses an in-depth knowledge 
+								of database types, research methodologies, and data capture, manipulation, and visualization.</h4>
+							<h4> Critical thinker with a strategic mindset who is experienced in gathering, interpreting, and analyzing data to reveal meaningful insights that support and validate 
+								relevant data-driven decisions.</h4>
+							<h4> Confident communicator and presenter who has a strong capacity for producing engaging research reports, statistical graphs, 
+								and presentations to influence positive change while maintaining confidentiality of information.</h4>
+							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
+							<hr>
+
+	
+							<div style="float: left; width: 50%">
+
+								<ul>
+								<li>Data Wrangling & Modeling</li>
+								<li>Data Analysis</li>
+								<li>Statistical/Mathematical Modeling</li>
+								<li>Machine Learning</li>
+								<li>Optimization</li>
+								</ul>
+							</div>
+							<div style="float: right; width: 50%; ">
+								<ul>
+								<li>Python, R, Java, SQL, MATLAB, HTML</li>
+								<li>Git, Tableau, PowerBI</li>
+								<li>Data Visualization</li>
+								<li>Report & Presentation</li>
+								<li>Cross-Functional Communication</li>
+								</ul>
+							</div>
+
+							<style>
+								hr {
+									display: inline-block;
+									width: 100%;
+								}
+								</style>
+								
+							<hr> 
+								<h4 style="display: inline; font-size : 14pt">szhangjd21 [at] gmail.com</h4>
+								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+								
+								<a style="padding-left:25px;" href="https://www.linkedin.com/in/shuyu-jade-zhang/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+								<a style="padding-left:25px;" href="https://github.com/jadeszhang" target="_blank" class="fa fa-github  fa-2x"></a>
+								<hr>
+								<ul class="actions">
+									<li><a href="#one" class="button scrolly">Education & Experience</a></li>
+									<li><a href="#two" class="button scrolly">Research Projects</a></li>
+									<li><a href="#three" class="button scrolly">Personal Projects</a></li>
+								</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<div class="inner">
+						<h2> Education & Experience</h2>
+
+						<ul class="actions">
+							<li><a onclick="myFunction()" class="button primary" > Hide/Show My Resume (PDF) </a></li>
+						</ul>
+						<div id="pdf" style="display: none">
+						<iframe 
+						frameborder="0"
+						scrolling="no"
+						width="1000"
+						height="1000"
+						src="Resume.pdf"
+					  	>
+					  	</iframe>
+						</div>
+
+						<ul class="actions">
+							<li><a onclick="myFunction_t()" class="button primary" > Hide/Show My Resume (Tableau) </a></li>
+						</ul>
+
+						<div style="display: none" id='viz1673827856255' class='tableauPlaceholder'>
+							<noscript><a href='#'><img alt='Resume ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Resume_16733863676720&#47;Resume&#47;1_rss.png' 
+								style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+									<param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Resume_16733863676720&#47;Resume' />
+									<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+									<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Resume_16733863676720&#47;Resume&#47;1.png' />
+									 <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+									 <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
+									 <param name='filter' value='publish=yes' /></object></div>               
+
+						
+						<hr>
+						<div class="timeline">
+							<div class="container left">
+							  <div class="content">
+								<h3>Exp. 09/2023</h3>
+								<h3>MS, Economics & Computer Science</h3>
+								<h3>Drexel University</h3>
+								<p>Drexel Merit Scholarship | GPA: 3.66/4.00</p>
+							  </div>
+							</div>
+							<div class="container right">
+								<div class="content">
+								  <h3>08/2021 - 12/2022</h3>
+								  <h3>Graduate Researcher | Drexel University</h3>
+								  <p> Completed multiple research projects and presented at top-tier conferences. </p>
+								  <h3>Graduate Teaching Assistant | Drexel University</h3>
+								  <p> Supported Introduction to Analysis II, Linear Models for Decision Making, Six-Sigma Quality Implementation, 
+									Operations and Supply Chain Management, Instructed Fundamentals of Management Information Systems</p>
+								</div>
+							  </div>
+							<div class="container left">
+								<div class="content">
+									<h3>05/2021</h3>
+									<h3>MS, Business Analytics</h3>
+									<h3>Clark University</h3>
+									<p>School of Management Dean's Scholarship | GPA: 3.66/4.00</p>
+								  </div>
+							</div>
+							<div class="container right">
+								<div class="content">
+								  <h3>12/2019 - 05/2021</h3>
+								  <h3>Graduate Research Assistant | Clark University</h3>
+									<p> Completed two research projects using Machine learning algorithms
+										and statistical tests, and presented in INFORMS, the biggest
+										international conference in fields of decision and information science </p>
+										<p>Supported other quantitative research projects by reviewing the
+											literature, analyzing methodology, and composing papers.</p>
+								  <h3>Graduate Teaching Assistant | Drexel University</h3>
+								  <p> Supported Introduction to Analysis II, Linear Models for Decision Making, Six-Sigma Quality Implementation, 
+									Operations and Supply Chain Management, Instructed Fundamentals of Management Information Systems</p>
+								</div>
+							  </div>
+							<div class="container left">
+								<div class="content">
+								  <h3>05/2019</h3>
+								  <h3>BS, Applied Machematics</h3>
+								  <h3>University of Maryland, College Park</h3>
+								</div>
+							</div>
+						</div>
+
+
+						</div>
+
+					</section>
+
+					
+				<!-- Two -->
+
+					<section id="two" class="wrapper style3 spotlights">
+						<section>
+							
+							<a href="#" class="image"><img src="images/ISF.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Choosing Aggregation level for Forecasting and Fairness</h2>
+									<h3>International Symposium on Forecasting | Oxford, England | 07/2022 </h3>
+									<ul>
+										<li>Proposed a hierarchical forecasting scheme to forecast yearly college enrollment regarding race/ethnicity.</li>
+										<li>Created a bisecting hierarchical clustering algorithm to cluster time series and implemented the algorithm. </li>
+										<li>Performed hierarchical forecasting using statistical models. </li>
+										<li>Increased the forecast accuracy by 15% compared to the conventional enrollment forecasting scheme.</li>
+										<li>Provided a new method for institutions to modify their fairness presentation across groups by aggregating data.</li>
+
+									  </ul>
+									<ul class="actions">
+										<li><a href="https://github.com/jadeszhang/The_Impact_of_Fair_Aggregation_on_Forecast_Accuracy_and_Fairness" target="_blank" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/informs.jpeg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Determinants of Car Accident Severity</h2>
+									<h3>INFORMS Annual Meeting | 11/2020  </h3>
+									<ul>
+										<li>Cleaned unstructured data that yielded ~200 features and ~130,000 observations and used Tableau for visualization.</li>
+										<li>Applied feature engineering and multiple machine learning classifiers (Logistic Regression, Decision Tree, SVM, KNN) to 
+											investigate the determinants of car accidents and yielded accuracy >= 85% and AUC >= 0.9. </li>
+										<li>Found that gender is surprisingly one of the most crucial indicators of the personal injury level, which provides significant insights for car manufacturers and safety testers. </li>
+
+									  </ul>
+									<ul class="actions">
+										<li><a href="https://github.com/jadeszhang/Cat_Accident_Severity_Determinantsc.html" target="_blank" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/informs.jpeg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Investigation Potential Bias In the Development of A Typical AI Platform for Heart Transplantation</h2>
+									<h3>INFORMS Annual Meeting | 11/2020  </h3>
+									<ul>
+										<li>Utilized multiple statistical tests to investigate if there is a significant bias in the predictive outcomes of a typical heart transplant decision-making platform. 
+											Revealed the existence of gender bias and regional bias. </li>
+	
+
+									  </ul>
+									<ul class="actions">
+										<li><a href="https://github.com/jadeszhang/Bias_Health_Care_Platform" target="_blank" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section id="three" class="wrapper style5 fade-up">
+						<div class="inner">
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Patient survival rates Prediction</h3>
+									<p>Women in Data Science Datathon in 2020 </p>
+									<p>Predicted patient survival rates based on data from the first 24 hours of intensive care using ensemble machine learning methods, 
+										such as XGBoost and LightGBM. </p>
+									<p>Obtained high accuracy and finished in the top 10% of participants. </p>
+									<ul class="actions small">
+										<li><a href="https://github.com/jadeszhang/WIDS_Datathon_2020" class="button primary small" target="_blank">Learn More</a></li>
+									</ul>
+								</section>
+								
+							
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Disater Or Not?</h3>
+									<p>Used natural language processing (NLP) to determine whether the given Tweets were emergency announcement</p>
+									<p>The result shows that it is possible to detect the particular types of tweets among all the information based on the NLP methods. 
+										All the algorithms achieved ~0.9 AUC and ~0.85 accuracy. </p>
+										<ul class="actions small">
+											<li><a href="https://github.com/jadeszhang/Disaster_Or_Not_NLP" class="button primary small" target="_blank">Learn More</a></li>
+										</ul>
+									</section>
+								
+							</div>
+							
+						</div>
+					</section>
+					
+
+
+					<section id="four" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p></p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="mailto: szhangjd21@gmail.com" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+
+										<li>
+											<h3>Email</h3>
+											<a> szhangjd21 [at] gmail.com</a>
+										</li>
+
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+
+												<li><a href="https://github.com/jadeszhang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/shuyu-jade-zhang/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("pdf");
+				  var y = document.getElementById("viz1673827856255")
+				  if (x.style.display == "block") {
+					x.style.display = "none";
+				  } else {
+					x.style.display = "block";
+				  }
+				  
+				}
+				</script>
+	
+				<script>
+					function myFunction_t() {
+					  var x = document.getElementById("viz1673827856255")
+					  if (x.style.display == "block") {
+						x.style.display = "none";
+					  } else {
+						x.style.display = "block";
+					  }
+					  
+					}
+					</script>
+
+					<script>                    
+						var divElement = document.getElementById('viz1673827856255');                    
+						var vizElement = divElement.getElementsByTagName('object')[0];                   
+						 if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+						 else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+						 else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     var scriptElement = document.createElement('script');              
+							   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);    
+										</script>
+		</body>
+</html>
