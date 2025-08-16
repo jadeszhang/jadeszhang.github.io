@@ -1,538 +1,325 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marvel HTML Bootstrap 4 Template</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
 -->
-<html>
-	<head>
-		<title>Jade Zhang - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			* {
-			  box-sizing: border-box;
-			}
-			
-			/* The actual timeline (the vertical ruler) */
-			.timeline {
-			  position: relative;
-			  max-width: 1200px;
-			  margin: 0 auto;
-			}
-			
-			/* The actual timeline (the vertical ruler) */
-			.timeline::after {
-			  content: '';
-			  position: absolute;
-			  width: 6px;
-			  background-color: white;
-			  top: 0;
-			  bottom: 0;
-			  left: 50%;
-			  margin-left: -3px;
-			}
-			
-			/* Container around content */
-			.container {
-			  padding: 10px 40px;
-			  position: relative;
-			  background-color: inherit;
-			  width: 50%;
-			}
-			/* The circles on the timeline */
-			.container::after {
-			  content: '';
-			  position: absolute;
-			  width: 25px;
-			  height: 25px;
-			  right: -10px;
-			  background-color: rgb(62, 114, 255);
-			  border: 4px solid #f9f8fa;
-			  top: 15px;
-			  border-radius: 50%;
-			  z-index: 1;
-			}
-			
-			/* Place the container to the left */
-			.left {
-			  left: 0;
-			}
-			
-			/* Place the container to the right */
-			.right {
-			  left: 50%;
-			}
-			
-			/* Add arrows to the left container (pointing right) */
-			.left::before {
-			  content: " ";
-			  height: 0;
-			  position: absolute;
-			  top: 22px;
-			  width: 0;
-			  z-index: 1;
-			  right: 30px;
-			  border: medium solid white;
-			  border-width: 10px 0 10px 10px;
-			  border-color: transparent transparent transparent white;
-			}
-			
-			/* Add arrows to the right container (pointing left) */
-			/*.right::before {
-			  content: " ";
-			  height: 0;
-			  position: absolute;
-			  top: 22px;
-			  width: 0;
-			  z-index: 1;
-			  left: 30px;
-			  border: medium solid white;
-			  border-width: 10px 10px 10px 0;
-			  border-color: transparent white transparent transparent;
-			} 
-			*/
-			
-			/* Fix the circle for containers on the right side */
-			.right::after {
-			  left: -16px;
-			}
-			
-			/* The actual content */
-			.content {
-			  padding: 20px 30px;
-			  position: relative;
-			  border-radius: 6px;
-			}
-			
-			/* Media queries - Responsive timeline on screens less than 600px wide */
-			@media screen and (max-width: 600px) {
-			  /* Place the timelime to the left */
-			  .timeline::after {
-			  left: 31px;
-			  }
-			  
-			  /* Full-width containers */
-			  .container {
-			  width: 100%;
-			  padding-left: 70px;
-			  padding-right: 25px;
-			  }
-			  
-			  /* Make sure that all arrows are pointing leftwards */
-			  .container::before {
-			  left: 60px;
-			  border: medium solid white;
-			  border-width: 10px 10px 10px 0;
-			  border-color: transparent white transparent transparent;
-			  }
-			
-			  /* Make sure all circles are at the same spot */
-			  .left::after, .right::after {
-			  left: 15px;
-			  }
-			  
-			  /* Make all right containers behave like the left ones */
-			  .right {
-			  left: 0%;
-			  }
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+  </head>
+  <body>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Education & Experience</a></li>
-							<li><a href="#two">Academic Projects & Conference Presentation</a></li>
-							<li><a href="#three">Personal Projects</a></li>
-							<li><a href="#four">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Marvel</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1 style="display: inline">Jade Zhang | </h1> <p style="display: inline">Data Science Enthusiast</p> 
-							<hr>
-							<h2> Hello! I'm Jade </h2>
-							<h4> Highly accomplished research and data analyst with a substantive academic background interpreting data across varied research topics. Possesses an in-depth knowledge 
-								of database types, research methodologies, and data capture, manipulation, and visualization.</h4>
-							<h4> Critical thinker with a strategic mindset who is experienced in gathering, interpreting, and analyzing data to reveal meaningful insights that support and validate 
-								relevant data-driven decisions.</h4>
-							<h4> Confident communicator and presenter who has a strong capacity for producing engaging research reports, statistical graphs, 
-								and presentations to influence positive change while maintaining confidentiality of information.</h4>
-							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
-							<hr>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
 
-	
-							<div style="float: left; width: 50%">
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-								<ul>
-								<li>Data Wrangling & Modeling</li>
-								<li>Data Analysis</li>
-								<li>Statistical/Mathematical Modeling</li>
-								<li>Machine Learning</li>
-								<li>Optimization</li>
-								</ul>
-							</div>
-							<div style="float: right; width: 50%; ">
-								<ul>
-								<li>Python, R, Java, SQL, MATLAB, HTML</li>
-								<li>Git, Tableau, PowerBI</li>
-								<li>Data Visualization</li>
-								<li>Report & Presentation</li>
-								<li>Cross-Functional Communication</li>
-								</ul>
-							</div>
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Marvel Sann</span>
+                                    <span class="animated-item">Web Designer</span>
+                                    <span class="animated-item">UI Specialist</span>
+                                </div>
+                        </h1>
 
-							<style>
-								hr {
-									display: inline-block;
-									width: 100%;
-								}
-								</style>
-								
-							<hr> 
-								<h4 style="display: inline; font-size : 14pt">szhangjd21 [at] gmail.com</h4>
-								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-								
-								<a style="padding-left:25px;" href="https://www.linkedin.com/in/shuyu-jade-zhang/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-								<a style="padding-left:25px;" href="https://github.com/jadeszhang" target="_blank" class="fa fa-github  fa-2x"></a>
-								<hr>
-								<ul class="actions">
-									<li><a href="#one" class="button scrolly">Education & Experience</a></li>
-									<li><a href="#two" class="button scrolly">Research Projects</a></li>
-									<li><a href="#three" class="button scrolly">Personal Projects</a></li>
-								</ul>
-						</div>
-					</section>
+                        <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<div class="inner">
-						<h2> Education & Experience</h2>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
 
-						<ul class="actions">
-							<li><a onclick="myFunction()" class="button primary" > Hide/Show My Resume (PDF) </a></li>
-						</ul>
-						<div id="pdf" style="display: none">
-						<iframe 
-						frameborder="0"
-						scrolling="no"
-						width="1000"
-						height="1000"
-						src="Resume.pdf"
-					  	>
-					  	</iframe>
-						</div>
+            </div>
+        </div>
+    </section>
 
-						<ul class="actions">
-							<li><a onclick="myFunction_t()" class="button primary" > Hide/Show My Resume (Tableau) </a></li>
-						</ul>
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
 
-						<div style="display: none" id='viz1673827856255' class='tableauPlaceholder'>
-							<noscript><a href='#'><img alt='Resume ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Resume_16733863676720&#47;Resume&#47;1_rss.png' 
-								style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-									<param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Resume_16733863676720&#47;Resume' />
-									<param name='tabs' value='no' /><param name='toolbar' value='yes' />
-									<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Resume_16733863676720&#47;Resume&#47;1.png' />
-									 <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
-									 <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
-									 <param name='filter' value='publish=yes' /></object></div>               
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Things I have designed for digital media agencies</h2>
+                      </div>
 
-						
-						<hr>
-						<div class="timeline">
-						
-						<div class="container right">
-						  <div class="content">
-							<h3>Exp. 09/2023</h3>
-							<h3>MS, Economics & Computer Science</h3>
-							<h3>Drexel University</h3>
-							<p>Drexel Merit Scholarship | GPA: 3.7/4.0</p>
-						  </div>
-						</div>
-							
-						<div class="container left">
-							<div class="content">
-							  <h3>05/2023 - 09/2023</h3>
-							  <h3>Data Science Intern | Fulton Bank</h3>
-							  <p> Building a rolling forecasting pipeline and integrating results into an optimization algorithm. 
-								Collaborating with a team across the bank to develop a cash allocation optimization utility for branches, 
-								potentially saving $5.5-10 million annually. 
-								</p>
-								<p> Crafted a keyword-based search utility to extract corresponding reports, data sources, 
-									and tables within all Power BI and SQL reports on the server.
-									</p>
-							</div>
-						  </div>
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-							<div class="container right">
-								<div class="content">
-								  <h3>08/2021 - 01/2023</h3>
-								  <h3>Graduate Researcher | Drexel University</h3>
-								  <p> Conducted comprehensive research projects using big data analysis
-									and statistical modeling, presented at top-tier international
-									conferences in fields of forecasting and information science, and
-									collaborated with researchers across the country in various fields.
-									</p>
-								  <h3>Graduate Teaching Assistant | Drexel University</h3>
-								  <p> Supported Introduction to Analysis II, Linear Models for Decision Making, Six-Sigma Quality Implementation, 
-									Operations and Supply Chain Management, Instructed Fundamentals of Management Information Systems</p>
-								</div>
-							  </div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-							<div class="container left">
-								<div class="content">
-									<h3>05/2021</h3>
-									<h3>MS, Business Analytics</h3>
-									<h3>Clark University</h3>
-									<p>School of Management Dean's Scholarship | GPA: 3.66/4.00</p>
-								  </div>
-							</div>
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
 
-							<div class="container right">
-								<div class="content">
-								  <h3>12/2019 - 05/2021</h3>
-								  <h3>Graduate Research Assistant | Clark University</h3>
-									<p> Completed two research projects using Machine learning algorithms
-										and statistical tests, and presented in INFORMS, the biggest
-										international conference in fields of decision and information science </p>
-										<p>Supported other quantitative research projects by reviewing the
-											literature, analyzing methodology, and composing papers.</p>
-								  <h3>Graduate Teaching Assistant | Drexel University</h3>
-								  <p> Supported Introduction to Analysis II, Linear Models for Decision Making, Six-Sigma Quality Implementation, 
-									Operations and Supply Chain Management, Instructed Fundamentals of Management Information Systems</p>
-								</div>
-							  </div>
+                  </div>
+                </div>
+        </div>
+    </section>
 
-							<div class="container left">
-								<div class="content">
-								  <h3>05/2019</h3>
-								  <h3>BS, Applied Machematics</h3>
-								  <h3>University of Maryland, College Park</h3>
-								</div>
-							</div>
-						</div>
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
 
-						</div>
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2019</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Project Manager</span><small>Best Studio</small></h3>
+                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                             </div>
+                        </div>
 
-					</section>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                            </div>
+                        </div>
 
-					
-				<!-- Two -->
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2016</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UI Freelancer</h3>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                            </div>
+                        </div>
 
-					<section id="two" class="wrapper style3 spotlights">
-						<section>
-							
-							<a href="#" class="image"><img src="images/ISF.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Choosing Aggregation level for Forecasting and Fairness</h2>
-									<h3>International Symposium on Forecasting | Oxford, England | 07/2022 </h3>
-									<ul>
-										<li>Proposed a hierarchical forecasting scheme to forecast yearly college enrollment regarding race/ethnicity.</li>
-										<li>Created a bisecting hierarchical clustering algorithm to cluster time series and implemented the algorithm. </li>
-										<li>Performed hierarchical forecasting using statistical models. </li>
-										<li>Increased the forecast accuracy by 15% compared to the conventional enrollment forecasting scheme.</li>
-										<li>Provided a new method for institutions to modify their fairness presentation across groups by aggregating data.</li>
+                    </div>
+                </div>
 
-									  </ul>
-									<ul class="actions">
-										<li><a href="enroll_forecasting_project.html" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/informs.jpeg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Determinants of Car Accident Severity</h2>
-									<h3>INFORMS Annual Meeting | 11/2020  </h3>
-									<ul>
-										<li>Cleaned unstructured data that yielded ~200 features and ~130,000 observations and used Tableau for visualization.</li>
-										<li>Applied feature engineering and multiple machine learning classifiers (Logistic Regression, Decision Tree, SVM, KNN) to 
-											investigate the determinants of car accidents and yielded accuracy >= 85% and AUC >= 0.9. </li>
-										<li>Found that gender is surprisingly one of the most crucial indicators of the personal injury level, which provides significant insights for car manufacturers and safety testers. </li>
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
 
-									  </ul>
-									<ul class="actions">
-										<li><a href="https://github.com/jadeszhang/Cat_Accident_Severity_Determinants" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/informs.jpeg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Investigation Potential Bias In the Development of A Typical AI Platform for Heart Transplantation</h2>
-									<h3>INFORMS Annual Meeting | 11/2020  </h3>
-									<ul>
-										<li>Utilized multiple statistical tests to investigate if there is a significant bias in the predictive outcomes of a typical heart transplant decision-making platform. 
-											Revealed the existence of gender bias and regional bias. </li>
-	
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2017</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                             </div>
+                        </div>
 
-									  </ul>
-									<ul class="actions">
-										<li><a href="https://github.com/jadeszhang/Bias_Health_Care_Platform" target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Artwork Design</span><small>New Art School</small></h3>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                            </div>
+                        </div>
 
-					<section id="three" class="wrapper style5 fade-up">
-						<div class="inner">
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Patient survival rates Prediction</h3>
-									<p>Women in Data Science Datathon in 2020 </p>
-									<p>Predicted patient survival rates based on data from the first 24 hours of intensive care using ensemble machine learning methods, 
-										such as XGBoost and LightGBM. </p>
-									<p>Obtained high accuracy and finished in the top 10% of participants. </p>
-									<ul class="actions small">
-										<li><a href="https://github.com/jadeszhang/WIDS_Datathon_2020" class="button primary small" target="_blank">Learn More</a></li>
-									</ul>
-								</section>
-								
-							
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Disater Or Not?</h3>
-									<p>Used natural language processing (NLP) to determine whether the given Tweets were emergency announcement</p>
-									<p>The result shows that it is possible to detect the particular types of tweets among all the information based on the NLP methods. 
-										All the algorithms achieved ~0.9 AUC and ~0.85 accuracy. </p>
-										<ul class="actions small">
-											<li><a href="https://github.com/jadeszhang/Disaster_Or_Not_NLP" class="button primary small" target="_blank">Learn More</a></li>
-										</ul>
-									</section>
-								
-							</div>
-							
-						</div>
-					</section>
-					
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
-					<section id="four" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p></p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="mailto: szhangjd21@gmail.com" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">010 020 0960</p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+                </div>
 
-										<li>
-											<h3>Email</h3>
-											<a> szhangjd21 [at] gmail.com</a>
-										</li>
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
 
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-												<li><a href="https://github.com/jadeszhang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/shuyu-jade-zhang/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
 
-			</div>
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
-			<script>
-				function myFunction() {
-				  var x = document.getElementById("pdf");
-				  var y = document.getElementById("viz1673827856255")
-				  if (x.style.display == "block") {
-					x.style.display = "none";
-				  } else {
-					x.style.display = "block";
-				  }
-				  
-				}
-				</script>
-	
-				<script>
-					function myFunction_t() {
-					  var x = document.getElementById("viz1673827856255")
-					  if (x.style.display == "block") {
-						x.style.display = "none";
-					  } else {
-						x.style.display = "block";
-					  }
-					  
-					}
-					</script>
+        </div>
+      </div>
+    </section>
 
-					<script>                    
-						var divElement = document.getElementById('viz1673827856255');                    
-						var vizElement = divElement.getElementsByTagName('object')[0];                   
-						 if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-						 else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-						 else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     var scriptElement = document.createElement('script');              
-							   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);    
-										</script>
-		</body>
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
 </html>
