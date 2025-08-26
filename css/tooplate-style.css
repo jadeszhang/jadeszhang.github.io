@@ -567,4 +567,21 @@ b, strong {
     display: inline-block;
     vertical-align: top;
   }
+
+
+
+  .project-card .project-thumb {
+    max-width: 120px;     /* smaller image */
+    flex: 0 0 120px;
+  }
+  @media (max-width: 575.98px) {
+    .project-card {
+      display: block;     /* stack image above text on small screens */
+    }
+    .project-card .project-thumb {
+      max-width: 100px;
+      margin-bottom: 0.75rem;
+    }
+  }
+  
 }
